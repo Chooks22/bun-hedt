@@ -1,0 +1,35 @@
+{
+  "name": "bun-hedt",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "bun run --hot scripts/dev.ts",
+    "build": "tailwind -mo public/styles.css",
+    "start": "NODE_ENV=production bun run scripts/start.ts",
+    "migrate": "bun run scripts/migrate.ts",
+    "fmt": "prettier src --write && eslint src --quiet --fix",
+    "lint": "tsc && eslint src"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.8.0",
+    "@elysiajs/static": "^0.8.1",
+    "drizzle-orm": "^0.29.4",
+    "elysia": "^0.8.17"
+  },
+  "devDependencies": {
+    "@chookslint/eslint-config-typescript": "^3.0.2",
+    "@types/bun": "^1.0.8",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "autoprefixer": "^10.4.18",
+    "drizzle-kit": "^0.20.14",
+    "eslint": "^8.57.0",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}

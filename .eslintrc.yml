@@ -1,0 +1,18 @@
+root: true
+env:
+  node: true
+extends:
+  - '@chookslint/eslint-config-typescript/strict'
+  - '@chookslint/eslint-config-typescript/types'
+parserOptions:
+  sourceType: module
+  ecmaVersion: latest
+  project: true
+ignorePatterns:
+  - dist/
+  - public/
+overrides:
+  - files: '*.{ts,tsx}'
+    rules:
+      '@typescript-eslint/consistent-type-definitions': off
+      '@typescript-eslint/explicit-module-boundary-types': off
