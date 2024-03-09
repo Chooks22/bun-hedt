@@ -13,10 +13,10 @@
     "lint": "tsc && eslint src"
   },
   "dependencies": {
-    "@elysiajs/html": "^0.8.0",
-    "@elysiajs/static": "^0.8.1",
+    "@elysiajs/html": "next",
+    "@elysiajs/static": "next",
     "drizzle-orm": "^0.29.4",
-    "elysia": "^0.8.17"
+    "elysia": "next"
   },
   "devDependencies": {
     "@chookslint/eslint-config-typescript": "^3.0.2",
