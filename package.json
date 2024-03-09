@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "bun run --hot scripts/dev.ts",
-    "build": "tailwind -mo public/styles.css",
+    "build": "tailwindcss -i src/styles.css -o public/styles.css -m",
     "start": "NODE_ENV=production bun run scripts/start.ts",
     "migrate": "bun run scripts/migrate.ts",
     "fmt": "prettier src --write && eslint src --quiet --fix",
@@ -20,16 +20,15 @@
   },
   "devDependencies": {
     "@chookslint/eslint-config-typescript": "^3.0.2",
+    "@tailwindcss/cli": "next",
     "@types/bun": "^1.0.8",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
-    "autoprefixer": "^10.4.18",
     "drizzle-kit": "^0.20.14",
     "eslint": "^8.57.0",
-    "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "next",
     "typescript": "^5.3.3"
   }
 }
